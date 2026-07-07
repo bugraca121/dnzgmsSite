@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atatürk Köşesi - Tam Bağımsızlık Mirası</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css" />
+    <style>
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin: 4rem 0;
+      }
+      .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid rgba(255,255,255,0.05);
+        aspect-ratio: 3/4;
+      }
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale(80%) contrast(110%);
+        transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1), filter 0.6s ease;
+      }
+      .gallery-item:hover img {
+        transform: scale(1.05);
+        filter: grayscale(0%) contrast(100%);
+      }
+      @media screen and (max-width: 992px) {
+        .gallery-grid {
+          grid-template-columns: 1fr;
+          gap: 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="page-bugun">
+    
+    <nav class="premium-nav scrolled">
+      <a href="/" class="nav-brand" style="text-decoration:none; color:inherit;">D. GEZMİŞ</a>
+      <div class="nav-menu">
+        <a href="/#hayati" class="nav-link">GERİ DÖN</a>
+      </div>
+    </nav>
+
+    <div class="smooth-scroll-wrapper">
+      
+      <!-- HERO SECTION -->
+      <header class="premium-hero">
+        <div class="hero-image-container">
+          <div class="hero-image" style="background-image: url('/ataturk_hero.jpg')"></div>
+          <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-title-group reveal-text-wrap">
+            <h1 class="hero-title reveal-text">BİR ULUSUN</h1>
+            <h1 class="hero-title reveal-text delay-1">KURTARICISI</h1>
+          </div>
+          <div class="hero-meta reveal-up delay-2">
+            <span class="meta-line" style="background: #d4af37;"></span>
+            <p style="color: #d4af37;">1881 — 1938</p>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <div class="mouse"></div>
+        </div>
+      </header>
+
+      <!-- CONTENT SECTION -->
+      <section style="padding: 4rem 0 10rem 0;">
+        <div class="container" style="max-width: 1100px; margin: 0 auto;">
+          
+          <div class="fade-in-section" style="max-width: 900px; margin: 0 auto;">
+            <p class="lead-text" style="font-size: 2.2rem; color: #d4af37;">
+              Tarihin akışını değiştiren eşsiz bir deha, esaret altındaki bir ulusun tek umudu ve ebedi başkomutanımız: <strong>Gazi Mustafa Kemal Atatürk.</strong> 
+            </p>
+            <p class="body-text" style="font-size: 1.2rem; margin-top: 1.5rem; line-height: 1.8;">
+              O, emperyalizmin acımasız dişlileri arasında ezilmek istenen, orduları dağıtılmış, toprakları işgal edilmiş bir milleti adeta uçurumun kenarından çekip almıştır. "Milletin bağımsızlığını yine milletin azim ve kararı kurtaracaktır" diyerek yaktığı o bağımsızlık ateşi, yenilmez sanılan sömürgeci güçleri dize getirmiş; dünyadaki tüm mazlum uluslara ilham olan eşsiz bir kurtuluş destanına dönüşmüştür. 
+            </p>
+            <p class="body-text" style="font-size: 1.2rem; margin-top: 1.5rem; line-height: 1.8;">
+              Ancak onun büyüklüğü sadece savaş meydanlarındaki eşsiz askeri dehasıyla sınırlı kalmamıştır. Küllerinden doğan bu yıkık dökük Anadolu topraklarında, aklın, bilimin ve aydınlanmanın ışığında yepyeni, modern, laik ve demokratik bir Cumhuriyet inşa etmiştir. Yüzlerce yılda yapılamayacak devrimleri kısacık bir ömre sığdırmış; halkını cehaletin ve karanlığın pençesinden kurtararak onlara onurlu, özgür ve başı dik bir yaşam armağan etmiştir.
+            </p>
+            <p class="body-text" style="font-size: 1.3rem; margin-top: 2rem; padding: 1.5rem; border-left: 3px solid #d4af37; background: rgba(212, 175, 55, 0.05); font-style: italic;">
+              Bugün aldığımız her özgür nefeste, bastığımız her karış özgür toprakta onun silinmez izi ve ödenemez hakkı vardır. Bize bıraktığı bu paha biçilemez mirasa, ilke ve inkılaplarına sonsuz bir minnet duyuyor; onun adını ve eserlerini sonsuza dek yaşatma kararlılığımızı bir an olsun yitirmiyoruz. Ruhun şad olsun, Büyük Ata'm!
+            </p>
+          </div>
+
+          <!-- GALLERY -->
+          <div class="gallery-grid fade-in-section delay-1">
+            <div class="gallery-item">
+              <img src="/ataturk1.jpg" alt="Atatürk Portresi 1" />
+            </div>
+            <div class="gallery-item" style="transform: translateY(2rem);">
+              <img src="/ataturk2.jpg" alt="Atatürk Portresi 2" />
+            </div>
+            <div class="gallery-item">
+              <img src="/ataturk3.jpg" alt="Atatürk Portresi 3" />
+            </div>
+          </div>
+
+          <!-- DENIZ GEZMIS BAGLANTISI -->
+          <div class="fade-in-section" style="max-width: 900px; margin: 6rem auto 0 auto;">
+            <h2 style="font-family: var(--font-display); font-size: 3rem; color: #d4af37; margin-bottom: 2rem;">İki Devrimci, Tek İdeal</h2>
+            <p class="body-text" style="font-size: 1.2rem; margin-bottom: 2rem;">
+              Atatürk'ün devrimci ve anti-emperyalist karakteri, kendisinden on yıllar sonra 68 Kuşağı'na da rehber oldu. Deniz Gezmiş ve yoldaşları, "İkinci Kurtuluş Savaşı"nı verdiklerine inanıyorlardı. Çünkü Atatürk onlara sadece bir devlet bırakmamış, aynı zamanda o devleti her koşulda korumak için <strong>Gençliğe Hitabe</strong> adında kusursuz bir görev belgesi bırakmıştı.
+            </p>
+          </div>
+
+          <div class="fade-in-section delay-1" style="max-width: 900px; margin: 4rem auto 0 auto;">
+            <h3 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 1.5rem;">Mustafa Kemal Yürüyüşü</h3>
+            <p class="body-text">
+              1968 sonbaharında, Amerikan emperyalizmine karşı halkı uyandırmak için Samsun'dan Ankara'ya "Tam Bağımsız Türkiye İçin Mustafa Kemal Yürüyüşü"nü başlattılar. Yürüyüşün rotası, Atatürk'ün Milli Mücadele'yi başlatmak için izlediği rotaydı. 
+            </p>
+          </div>
+
+          <div class="fade-in-section delay-2" style="max-width: 900px; margin: 4rem auto 0 auto;">
+            <h3 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 1.5rem;">Mahkemedeki Tarihi Savunma</h3>
+            <p class="body-text">
+              Deniz Gezmiş askeri mahkemede yargılanırken, "Anayasayı ihlal" suçlamasını şiddetle reddetmiş ve mahkeme heyetinin yüzüne karşı şöyle haykırmıştı:
+            </p>
+            <blockquote class="premium-quote" style="margin-top: 2rem; padding: 3rem; background: rgba(255,255,255,0.03); font-size: 1.6rem; border-left: 4px solid #d4af37;">
+              "Biz bağımsızlık istiyoruz dediğimiz zaman, tam bağımsızlık istediğimizi herkesin anlaması gerekir... Biz Mustafa Kemal'in 1920'lerde yaptıklarını savunuyoruz. Sizler ise emperyalizmle işbirliği yapıyorsunuz."
+            </blockquote>
+          </div>
+
+        </div>
+      </section>
+
+      <footer class="premium-footer">
+        <div class="container footer-content">
+          <h2 class="footer-title">ATATÜRK'ÜN İZİNDE</h2>
+          <p class="footer-copy">© 2026. Tam Bağımsız ve Özgür Türkiye İçin.</p>
+        </div>
+      </footer>
+      
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
